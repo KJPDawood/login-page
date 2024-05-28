@@ -1,0 +1,106 @@
+*{
+    padding: 0px;
+    margin: 0%;
+}
+body{
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.door-border{
+    width: 350px;
+    height: 550px;
+    border: 20px ridge rgb(255, 255, 255);
+    border-bottom: none;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px -22px 70px 4px;
+
+}
+.door{
+    background-color: rgb(95, 90, 90);
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset,rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+.glasses-container{
+    height: 400px;
+    width: 150px;
+    border: 5px groove rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column;
+}
+.glasses{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 20px;
+}
+.hook{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 3px groove white;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.sign{
+    height: 100px;
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.signing-option{
+    width: 150px;
+    height: 50px;
+    font-size: large;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: white;
+    border: 5px ridge white;
+    background-color: rgb(117, 111, 111);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.signing-option:active{
+    border: 5px groove white ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+input{
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    padding:0 10px;
+    border: 3px ridge white;
+    display: none;    
+}
+.input{
+    border: 3px solid;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+}
+@keyframes rotate {
+    from{
+        transform: translate(0)
+        rotate(0);
+    }
+    to{
+        transform: translateX(350px)
+        perspective(2000px) rotateY(180deg);
+    }
+}
